@@ -1,0 +1,8 @@
+#RewriteEngine On
+#RewriteRule ^([^/]*)$ index.php?tt=$1 [L]
+#
+Options -Multiviews
+Options +FollowSymLinks
+options +Indexes
+RewriteEngine on
+RewriteRule ^(\w+)/?$ /index.php?tt=$1 [L]
